@@ -75,8 +75,8 @@
     <div class="bg-gray-200 flex flex-col md:flex-row justify-between p-28">
         <!-- Left side: smaller image, larger bold text -->
         <div class="flex flex-col items-start space-y-4 max-w-md justify-center ml-20 md:ml-10 px-4 md:px-0">
-            <img src="./images/caplot.avif" alt="caplot" class="w-32 h-32 md:w-48 md:h-auto"> <!-- smaller image -->
-            <h6 class="font-bold text-4xl md:text-6xl leading-tight">
+            <img src="./images/caplot.avif" alt="caplot" class="w-32 h-32 md:w-48 md:h-auto hidden lg:flex "> <!-- smaller image -->
+            <h6 class="font-bold text-4xl md:text-6xl leading-tight a">
                 New Surface <br> Copilot+ PCs are <br> here
             </h6>
             <p class="text-gray-700">
@@ -90,7 +90,7 @@
 
         <!-- Right side: main image -->
 
-        <div class="mx-10 md:mx-30 mt-6 md:mt-0">
+        <div class="mx-10 md:mx-30 mt-6 md:mt-0 hidden lg:flex">
             <img src="./images/img-1.avif" alt="main image" class="w-full md:w-96 h-[400px]">
         </div>
 
@@ -214,16 +214,18 @@
     </div>
 
     <div class="relative m-16">
-        <img src="./images/img-9.avif" alt="image" class="w-full h-auto" />
+        <img src="./images/img-9.avif" alt="image" class="w-full h-auto hidden lg:flex" />
 
-        <div class="absolute inset-0 flex flex-col justify-center p-40 pr-96 mr-96">
+        <!-- Hide on small/medium screens, show only on large and above -->
+        <div class="hidden lg:flex absolute inset-0 flex-col justify-center p-40 pr-96 mr-96">
             <h1 class="text-black text-3xl font-bold">
                 Copilot is your AI Companion
             </h1><br>
-            <p>Always by your side, ready to support you whenever and wharever you need it.</p><br>
+            <p>Always by your side, ready to support you whenever and wherever you need it.</p><br>
             <button class="bg-blue-500 p-2 text-white">Download the Copilot app</button>
         </div>
     </div>
+
 
     <div>
         <h1 class="text-3xl font-bold p-5">For Business</h1>
@@ -242,7 +244,7 @@
                 <button class="bg-yellow-400 p-1 mx-2 mt-2">Coming july 2025</button>
                 <h1 class="font-bold text-2xl m-2">Meet the latest Srface for Business Copilot+ PCs</h1>
                 <p class="m-2 text-sm">Elite, wireless, adaptive-find the controller that fits your style of play.</p>
-                
+
                 <button class="bg-blue-500 text-white p-2 m-2">Learn more</button>
             </div>
 
@@ -296,14 +298,15 @@
             </div>
         </div>
     </div>
-    <div class="relative m-16">
+    <div class="relative m-16 hidden lg:flex">
         <img src="./images/1mg-17.avif" alt="image" class="w-full h-auto" />
 
         <div class="absolute inset-0 flex flex-col justify-center   p-40 pr-96 mr-96">
             <h1 class="text-white text-3xl font-bold">
                 AI is setting a new blueprint for Business
             </h1><br>
-            <p class="text-white">Meet the organization future -- the frontier Firm- power by on demand intelligence, hybrid human-agent
+            <p class="text-white">Meet the organization future -- the frontier Firm- power by on demand intelligence,
+                hybrid human-agent
                 teams, and a new one role for everyone : agent boss.</p><br>
             <button class="bg-blue-500 p-2 text-white">Export the report</button>
 
@@ -343,4 +346,11 @@
             </div>
 
         </div>
+
+
+
+
+
+
+
 </body>
